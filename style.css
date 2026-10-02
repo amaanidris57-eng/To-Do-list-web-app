@@ -1,0 +1,79 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+font-family: "Segoe UI", system-ui, sans-serif;
+background: #eef0f6;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+padding: 48px 16px;
+color: #1f2330;
+}
+
+.app {
+background: #fff;
+width: 100%;
+max-width: 480px;
+height: fit-content;
+padding: 28px;
+border-radius: 14px;
+box-shadow: 0 8px 24px rgba(30, 40, 90, 0.1);
+}
+
+h1 { font-size: 1.6rem; margin-bottom: 20px; }
+
+.input-row { display: flex; gap: 8px; }
+
+#taskInput {
+flex: 1;
+padding: 11px 14px;
+border: 2px solid #d8dbe8;
+border-radius: 8px;
+font-size: 1rem;
+}
+#taskInput:focus { outline: none; border-color: #5b4de0; }
+
+button {
+cursor: pointer;
+border: none;
+font-size: 0.95rem;
+border-radius: 8px;
+}
+
+#addBtn {
+background: #5b4de0;
+color: #fff;
+padding: 0 18px;
+font-weight: 600;
+}
+#addBtn:hover { background: #4a3dc4; }
+
+.counter { margin: 16px 0 8px; font-size: 0.85rem; color: #6b7088; }
+
+ul { list-style: none; }
+
+li {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+padding: 12px 4px;
+border-bottom: 1px solid #eceef5;
+}
+
+.task-text { flex: 1; cursor: pointer; word-break: break-word; }
+
+li.completed .task-text {
+text-decoration: line-through;
+color: #9a9fb5;
+}
+
+.remove-btn {
+background: #fdecec;
+color: #c62828;
+padding: 6px 12px;
+}
+.remove-btn:hover { background: #f9d3d3; }
+
+.empty { text-align: center; color: #9a9fb5; padding: 20px 0 4px; }
+.hidden { display: none; }
